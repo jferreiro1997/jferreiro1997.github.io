@@ -1,1 +1,138 @@
-Hello World!
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/46b44b60b9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" media="screen and (max-width: 760)" href="css/mobile.css">
+    <link rel="stylesheet" media="screen and (mmin-width: 1200px)" href="css/widescreen.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>JF Financial || Contabilidad e Inversiones</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <h1 class="logo">
+            <span class="text-primary"> <i class="fas fa-book-open"></i> JF</span>
+            <p>Asesoria Financiera</p>
+        </h1>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Contabilidad">Contabilidad</a></li>
+            <li><a href="#Inversiones">Inversiones</a></li>
+            <li><a href="#Contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Portada -->
+    <header id="showcase">
+        <div class="showcase-content">
+            <h1 class="l-heading">
+                <span class="text-primary">
+                    <i class="fas fa-book-open"></i> JF
+                </span> Asesoria Financiera
+            </h1>
+            <p>Que Logres Tus Metas, Es Nuestra Meta</p>
+        </div>
+    </header>
+
+    <section id="what" class="bg-light py-1">
+        <div class="container">
+            <h2 class="m-heading text-center"><span class="text-primary">Que</span> hacemos?</h2>
+            <div class="items">
+                <div class="item">
+                    <i class="fas fa-university fa-2x"></i>
+                    <div>
+                        <h3>Banco de inversiones</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, officia.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="fas fa-book-reader fa-2x"></i>
+                    <div>
+                        <h3>Consultoria</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, officia.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="fas fa-pencil-alt fa-2x"></i>
+                    <div>
+                        <h3>Convenios</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, officia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="who">
+        <div class="who-img"></div>
+        <div class="who-info bg-dark p-1">
+            <h2><span class="text-primary">¿Quienes</span> Somos?</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo necessitatibus, sit doloremque consectetur
+                iste neque quaerat sint soluta placeat dolore expedita saepe beatae perferendis? Sit, doloremque.
+                Perferendis tenetur repellendus earum?</p>
+            <h3 class="m-heading">Nuestro Equipo:</h3>
+            <ul class="list">
+                <li>CEO: Javier Ferreiro</li>
+                <li>CFO: Gabriela Gonzalez</li>
+                <li>Ejecutiva: Daniela Andrade</li>
+                <li>Ejecutiva: Camila Brown</li>
+                <li>Contador: Pablo Rodriguez</li>
+            </ul>
+        </div>
+    </section>
+    <br>
+    <section id="clientes" class="bg-light">
+        <div class="container">
+            <h2 class="text-center m-heading">
+                <span class="text-primary">Nuestros</span>
+                Clientes
+            </h2>
+            <div class="items py-1">
+                <div><img src="./img/logos/logo1.png" alt="Logo"></div>
+                <div><img src="./img/logos/logo2.png" alt="Logo"></div>
+                <div><img src="./img/logos/logo3.png" alt="Logo"></div>
+                <div><img src="./img/logos/logo4.png" alt="Logo"></div>
+                <div><img src="./img/logos/logo5.png" alt="Logo"></div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-form bg-primary p-1">
+            <h2 class="m-heading">Contactanos</h2>
+            <p>Para cualquier consulta o cotizacion llene el siguiente formulario</p>
+            <form action="">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre">
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido">
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo</label>
+                    <input type="text" name="correo" id="correo" placeholder="Ingrese su correo">
+                </div>
+                <div class="form-group">
+                    <label for="numero">Numero</label>
+                    <input type="text" name="numero" id="numero" placeholder="Ingrese su Numero de contacto">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" cols="20" rows="20"></textarea>
+                </div>
+                <input type="submit" class="btn btn-dark" value="Enviar">
+            </form>
+        </div>
+        <div class="map"></div>
+    </section>
+
+    <script src="./js/main.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIrTPgHZLvd2WxERySiNoUtD7RgbGKYP4&callback=initMap"
+    async defer></script>
+</body>
+
+</html>
