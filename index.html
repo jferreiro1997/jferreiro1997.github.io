@@ -1,138 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/46b44b60b9.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" media="screen and (max-width: 760)" href="css/mobile.css">
-    <link rel="stylesheet" media="screen and (mmin-width: 1200px)" href="css/widescreen.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>JF Financial || Contabilidad e Inversiones</title>
+    <link rel="stylesheet" href="/styles.css">
+    <title>Simco</title>
 </head>
-
 <body>
-    <nav id="navbar">
-        <h1 class="logo">
-            <span class="text-primary"> <i class="fas fa-book-open"></i> JF</span>
-            <p>Asesoria Financiera</p>
-        </h1>
+    <nav id="main-navbar">
+        <div class="logo">
+            <img src="/img/logo.png" alt="">
+        </div>
         <ul>
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#Contabilidad">Contabilidad</a></li>
-            <li><a href="#Inversiones">Inversiones</a></li>
-            <li><a href="#Contacto">Contacto</a></li>
+            <li><a href="/">Pagina Principal</a></li>
+            <li> <a href="/portfolio.html">Portafolio</a></li>
+            <li> <a href="/#t-como-trabajamos">Como Trabajamos</a> </li>
+            <li> <a href="/#t-nuestro-compromiso">Nuestro Compromiso</a></li>
+            <li class="contacto"><a href="/#t-contacto" class="contacto btn btn-primary">Contacto</a></li>
+            <li class="social social-ig"><a href="https://www.instagram.com/cocinassimco/ "><i class="fab fa-instagram"></i></a></li>
+            <li class="social social-fb"><a href="https://www.facebook.com/cocinassimco-106538607695788/"><i class="fab fa-facebook-f"></i></a></li>
         </ul>
     </nav>
+    <section class="banner">
+        <div class="banner-info">
+            <img src="/img/icons/1.png" alt="">
+            <p>Fabricamos</p>
+            <p>Muebles a medida</p>
+            <p>con un trabajo basado en la</p>
+            <p>Estética y Modernidad</p>
 
-    <!-- Portada -->
-    <header id="showcase">
-        <div class="showcase-content">
-            <h1 class="l-heading">
-                <span class="text-primary">
-                    <i class="fas fa-book-open"></i> JF
-                </span> Asesoria Financiera
-            </h1>
-            <p>Que Logres Tus Metas, Es Nuestra Meta</p>
+            <a class="btn btn-primary" href="/portfolio.html">Revisa nuestros trabajos</a>
         </div>
-    </header>
-
-    <section id="what" class="bg-light py-1">
-        <div class="container">
-            <h2 class="m-heading text-center"><span class="text-primary">Que</span> hacemos?</h2>
-            <div class="items">
-                <div class="item">
-                    <i class="fas fa-university fa-2x"></i>
-                    <div>
-                        <h3>Banco de inversiones</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, officia.</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <i class="fas fa-book-reader fa-2x"></i>
-                    <div>
-                        <h3>Consultoria</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, officia.</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <i class="fas fa-pencil-alt fa-2x"></i>
-                    <div>
-                        <h3>Convenios</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, officia.</p>
-                    </div>
-                </div>
+        <img class="min-h" src="/img/Banners/1.png" alt="">
+    </section>
+    <div class="separador"></div>
+    <section class="banner">
+        <img class="banner-img" src="/img/Banners/2.png" alt="">
+        <div class="banner-info">
+            <img src="/img/icons/2.png" alt="">
+            <p>¿Que nos caracteriza?</p>
+            <p>Responsabilidad</p>
+            <p>junto con la mas alta</p>
+            <p>calidad</p>
+            <a class="btn btn-primary" href="#nuestros-clientes">Testimonios Clientes</a>
+        </div>
+    </section>
+    <div class="separador"></div>
+    <h1 id="t-nuestro-compromiso" class="text-center py-2">Comprometidos con la Higene</h1>
+    <section class="banner">
+        <div class="banner-info text-right align-items-end mr-1">
+            <img src="/img/icons/3.png" alt="">
+            <h1>Trabajamos con <br> los materiales y cubiertas <br> más Higienicas del mercado</h1>
+            <p class="lead text-left">Impiden el crecimiento de hongos y bacterias, transformándose en un producto 100% higiénico y atóxico.</p>
+        </div>
+        <img class="banner-img" src="/img/Banners/3.png" alt="">
+    </section>
+    <div class="separador"></div>
+    <h1 id="t-como-trabajamos" class="text-center py-2">¿Cómo trabajamos?</h1>
+    <section id="como-trabajamos">
+        <div class="banner">
+            <div class="banner-card">
+                <h1>1.</h1>
+                <p>Nos ponemos en Contacto</p>
+                <p class="lead">¡Cuentános de tu proyecto!</p>
+                <a href="/#t-contacto" class="btn btn-primary">Contacto</a>
+            </div>
+            <div class="banner-card">
+                <h1>2.</h1>
+                <p>Te vamos a visitar</p>
+                <p class="lead">Tomamos las medidas</p>
+                <img src="/img/icons/como-trabajamos/2.png" alt="">
+            </div>
+            <div class="banner-card">
+                <h1>3.</h1>
+                <p>Diseñamos en 3D</p>
+                <p class="lead">Cónoce tu cocina antes</p>
+                <img src="/img/icons/como-trabajamos/3.png" alt="">
+            </div>
+            <div class="banner-card">
+                <h1>4.</h1>
+                <p>Cotización Final</p>
+                <p class="lead">¡Estamos a 1 paso!</p>
+                <img src="/img/icons/como-trabajamos/4.png" alt="">
+            </div>
+            <div class="banner-card">
+                <h1>5.</h1>
+                <p>Comenzamos</p>
+                <p class="lead">El proyecto de tus sueños</p>
+                <img src="/img/icons/como-trabajamos/5.png" alt="">
             </div>
         </div>
     </section>
-    <section id="who">
-        <div class="who-img"></div>
-        <div class="who-info bg-dark p-1">
-            <h2><span class="text-primary">¿Quienes</span> Somos?</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo necessitatibus, sit doloremque consectetur
-                iste neque quaerat sint soluta placeat dolore expedita saepe beatae perferendis? Sit, doloremque.
-                Perferendis tenetur repellendus earum?</p>
-            <h3 class="m-heading">Nuestro Equipo:</h3>
-            <ul class="list">
-                <li>CEO: Javier Ferreiro</li>
-                <li>CFO: Gabriela Gonzalez</li>
-                <li>Ejecutiva: Daniela Andrade</li>
-                <li>Ejecutiva: Camila Brown</li>
-                <li>Contador: Pablo Rodriguez</li>
-            </ul>
-        </div>
-    </section>
-    <br>
-    <section id="clientes" class="bg-light">
-        <div class="container">
-            <h2 class="text-center m-heading">
-                <span class="text-primary">Nuestros</span>
-                Clientes
-            </h2>
-            <div class="items py-1">
-                <div><img src="./img/logos/logo1.png" alt="Logo"></div>
-                <div><img src="./img/logos/logo2.png" alt="Logo"></div>
-                <div><img src="./img/logos/logo3.png" alt="Logo"></div>
-                <div><img src="./img/logos/logo4.png" alt="Logo"></div>
-                <div><img src="./img/logos/logo5.png" alt="Logo"></div>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="contact-form bg-primary p-1">
-            <h2 class="m-heading">Contactanos</h2>
-            <p>Para cualquier consulta o cotizacion llene el siguiente formulario</p>
-            <form action="">
-                <div class="form-group">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre">
-                </div>
-                <div class="form-group">
-                    <label for="apellido">Apellido</label>
-                    <input type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido">
-                </div>
-                <div class="form-group">
-                    <label for="correo">Correo</label>
-                    <input type="text" name="correo" id="correo" placeholder="Ingrese su correo">
-                </div>
-                <div class="form-group">
-                    <label for="numero">Numero</label>
-                    <input type="text" name="numero" id="numero" placeholder="Ingrese su Numero de contacto">
-                </div>
-                <div class="form-group">
-                    <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" id="mensaje" cols="20" rows="20"></textarea>
-                </div>
-                <input type="submit" class="btn btn-dark" value="Enviar">
+    <div class="separador"></div>
+    <section id="t-contacto" class="banner">
+        <img class="form-img" src="/img/Banners/4.png" alt="">
+        <div class="banner-form">
+            <h1>¡Cuentános <br> <span>tú Proyecto!</span></h1>
+            <form action="" method="">
+                <input type="text" name="nombre" placeholder="Tu Nombre">
+                <input type="text" name="correo" placeholder="Tu Correo">
+                <input type="text" name="comuna" placeholder="Comuna">
+                <input type="text" name="comentario" placeholder="Cuentános">
+                <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
+            <p class="py-1">También puedes llamarnos o escribirnos un Whatsapp!</p>
+            <a href="tel:+56996217484" class="btn btn-primary ">Llamar</a>
+            <a href="https://wa.me/56996217484" class="btn btn-wsp">Whatsapp</a>
         </div>
-        <div class="map"></div>
     </section>
-
-    <script src="./js/main.js"></script>
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIrTPgHZLvd2WxERySiNoUtD7RgbGKYP4&callback=initMap"
-    async defer></script>
+    <div class="separador"></div>
+    <section id="nuestros-clientes">
+        <h1>¿Qué dicen nuestros clientes?</h1>
+        <div class="clientes">
+            <div class="cliente">
+                <p class="comentario">“Confiar en Simco terminó siendo mi mejor inversión, hoy en día hay pocos tan responsables como ellos”</p>
+                <p class="autor">Ricardo Sanhueza</p>
+                <p class="ciudad">San Pedro de la Paz</p>
+            </div>
+            <div class="cliente">
+                <p class="comentario">“Mi señora siempre quiso que la cocina fuera lo más especial de la casa, Simco lo consiguió”</p>
+                <p class="autor">Marcelo Ortiz</p>
+                <p class="ciudad">Concepción</p>
+            </div>
+            <div class="cliente">
+                <p class="comentario">“Desde el primer momento hasta el último el proceso fue una gran experiencia, gracias!”</p>
+                <p class="autor">Carla Sanhueza</p>
+                <p class="ciudad">Chiguayante</p>
+            </div>
+        </div>
+    </section>
+    <a href="/portfolio.html" class="btn btn-primary btn-portafolio">Revisa Nuestro Portafolio</a>
+    <footer>
+        <div class="logo">
+            <img src="/img/logo.png" alt="">
+        </div>
+        <ul>
+            <li><a href="/">Pagina Principal</a></li>
+            <li> <a href="/portfolio.html">Portafolio</a></li>
+            <li> <a href="/#t-como-trabajamos">Como Trabajamos</a> </li>
+            <li> <a href="/#t-nuestro-compromiso">Nuestro Compromiso</a></li>
+            <li class="contacto"><a href="/#t-contacto" class="contacto btn btn-primary">Contacto</a></li>
+        </ul>
+    </footer>
+    <div id="der" class="lead text-center p-1">Sitio Web desarrollado por <strong>Javier Ferreiro</strong> junto con Espacio 126 <br> 2020 Todos los Derechos Reservados</div>
 </body>
-
 </html>
