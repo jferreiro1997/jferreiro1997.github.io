@@ -97,8 +97,25 @@ a{
 .mr-2{margin-right: 2rem !important;}
 .mr-3{margin-right: 3rem !important;}
 
+.my-1{
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+.my-2{
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+}
+
+.my-3{
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+}
+
+
+
 .min-h{
-    min-height: 420px;
+    min-height: 600px;
+    min-width: 65vw;
 }
 
 /*Main Navbar*/
@@ -124,13 +141,14 @@ a{
     list-style: none;
     line-height: 1.5;
     margin-left: 30vw;
+    justify-content: space-between;
 }
 
 #main-navbar > ul li{ 
-    flex: 2;
     font-size: 1vw;
     white-space: nowrap;
     margin: 0 1.9vw;
+    margin-top: 0.75vw;
 }
 
 #main-navbar .btn{
@@ -141,21 +159,20 @@ a{
 }
 
 #main-navbar .social{
-    flex: 1;
-    height: 0.5vw;
+    height: 2vw;
     width: 0.5vw;
-}
-
-#main-navbar .social a {
-    height: 100%;
-    width: 100%;
+    margin-top: 0;
     text-align: center;
 }
 
 #main-navbar .social i{
     border: 2px solid white;
     border-radius: 50%;
-    padding: 1vw;
+
+    height: 2.8vw;
+    width: 2.8vw;
+
+    padding-top: 0.85vw;
 }
 
 /*Banner Class*/
@@ -241,14 +258,16 @@ a{
 
 .banner-card .btn{
     display: block;
-    margin-top: 3.5rem;
-    width: 10vw;
-    padding: 0.5rem 1rem;
+    height: 2vw;
+    width: 9.5vw;
+    margin-top: 6vw;
+    padding: 0.35rem 1rem;
 }
 
 .banner-card img{
-    margin-top: 2rem;
-    width: 7.7vw;
+    margin-top: 3vw;
+    width: 9.5vw;
+    height: 9vw;
 }
 
 /*banner form*/
@@ -355,9 +374,11 @@ footer ul{
     flex: 3;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style: none;
     margin: 0 auto;
+
+    text-align: center;
 }
 
 footer ul li {
@@ -395,7 +416,24 @@ footer ul .btn {
     row-gap: 1vw;
 }
 
+#galeria .box {
+    position: relative;
+    background: var(--primary-color);
+}
+ 
 #portfolio #galeria img{
     width: 100%;
     height: auto;
+    display: block;
+    margin: auto;
+    transition: all linear 0.1s;
+    margin-top: 0;
+    border: white 0px solid;
+    border-style: inset;
+}
+
+#portfolio #galeria img:hover{
+    width: 98%;
+    height: auto;
+    margin-top: 0.75%;
 }
