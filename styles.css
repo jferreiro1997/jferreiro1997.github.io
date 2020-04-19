@@ -130,7 +130,7 @@ a{
 
 #main-navbar .logo img{
     position: absolute;
-    left: 2.5vw;
+    left: 4.72vw;
     top: -15px;
     max-width: 200px;
     height: auto;
@@ -260,14 +260,14 @@ a{
     display: block;
     height: 2vw;
     width: 9.5vw;
-    margin-top: 6vw;
+    margin-top: 4vw;
     padding: 0.35rem 1rem;
 }
 
 .banner-card img{
     margin-top: 3vw;
-    width: 9.5vw;
-    height: 9vw;
+    width: auto;
+    height: 5vw;
 }
 
 /*banner form*/
@@ -350,6 +350,11 @@ a{
     font-weight: 700;
     min-height: 180px;
     height: 20vw;
+}
+
+#revisa {
+    margin-top: 5vw;
+    margin-bottom: 10vw;
 }
 
 /*Footer*/
