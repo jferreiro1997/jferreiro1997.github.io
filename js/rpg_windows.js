@@ -2544,7 +2544,7 @@ Window_Status.prototype.refresh = function() {
         this.drawBlock2(lineHeight * 2);
         this.drawHorzLine(lineHeight * 6);
         this.drawBlock3(lineHeight * 7);
-        this.drawHorzLine(lineHeight * 13);
+        this.drawHorzLine(lineHeight * 14); //tercera linea
         this.drawBlock4(lineHeight * 14);
     }
 };
@@ -2586,13 +2586,13 @@ Window_Status.prototype.drawBasicInfo = function(x, y) {
     this.drawActorLevel(this._actor, x, y + lineHeight * 0);
     this.drawActorIcons(this._actor, x, y + lineHeight * 1);
     this.drawActorHp(this._actor, x, y + lineHeight * 2);
-    this.drawActorMp(this._actor, x, y + lineHeight * 3);
+    //this.drawActorMp(this._actor, x, y + lineHeight * 3);
 };
 
 Window_Status.prototype.drawParameters = function(x, y) {
     var lineHeight = this.lineHeight();
-    for (var i = 0; i < 6; i++) {
-        var paramId = i + 2;
+    for (var i = 0; i < 7; i++) {
+        var paramId = i + 1;
         var y2 = y + lineHeight * i;
         this.changeTextColor(this.systemColor());
         this.drawText(TextManager.param(paramId), x, y2, 160);
@@ -2612,11 +2612,11 @@ Window_Status.prototype.drawExpInfo = function(x, y) {
         value2 = '-------';
     }
     this.changeTextColor(this.systemColor());
-    this.drawText(expTotal, x, y + lineHeight * 0, 270);
-    this.drawText(expNext, x, y + lineHeight * 2, 270);
-    this.resetTextColor();
-    this.drawText(value1, x, y + lineHeight * 1, 270, 'right');
-    this.drawText(value2, x, y + lineHeight * 3, 270, 'right');
+    //this.drawText(expTotal, x, y + lineHeight * 0, 270);
+    //this.drawText(expNext, x, y + lineHeight * 2, 270);
+    //this.resetTextColor();
+    //this.drawText(value1, x, y + lineHeight * 1, 270, 'right');
+    //this.drawText(value2, x, y + lineHeight * 3, 270, 'right');
 };
 
 Window_Status.prototype.drawEquipments = function(x, y) {
